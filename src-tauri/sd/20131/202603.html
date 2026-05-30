@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ИСУ СПбГМТУ в Санкт-Петербурге</title>
+<meta name="description" content="Информационную систему Университета (ИСУ) СПбГМТУ" />
+<meta name="keywords" content="ИСУ, Информационные технологии, Корабелка, ЛТИ, ИСУ СПбГМТУ в Санкт-Петербурге" />
+<meta name="author" content="SMTU" />
+<meta name="coder" content="Andrey Kurkin" />
+<meta name="category" content="Образование" />
+<meta name="publisher" content="isu.smtu.ru" />
+<meta name="revisit" content="1 days" />
+<meta name="robots" content="all" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="copyright (c) 2016-2026 by isu.smtu.ru" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="2 days" />
+<meta name="rating" content="general" />
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="ИСУ СПбГМТУ в Санкт-Петербурге" />
+<meta property="og:description" content="Информационную систему Университета (ИСУ) СПбГМТУ" />
+<meta property="og:image" content="https://isu.smtu.ru/images/logo_new.png" />
+<meta property="og:url" content="https://isu.smtu.ru/"/>
+<meta property="og:site_name" content="ИСУ isu.smtu.ru" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content="ИСУ СПбГМТУ в Санкт-Петербурге" />
+<meta property="twitter:description" content="Информационную систему Университета (ИСУ) СПбГМТУ" />
+<meta property="twitter:image" content="https://isu.smtu.ru/images/logo_new.png" />
+<meta property="twitter:url" content="https://isu.smtu.ru/" />
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css" /> 
+
+<!-- Base Styling -->
+<link rel="stylesheet" href="/assets/css/app/app.v1.css?1762256795" />
+
+<link rel="stylesheet" href="/assets/css/app/app.custom.css?v=2021" />
+
+<link rel="stylesheet" href="/assets/css/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+.hand {
+cursor: pointer;
+}
+.red {
+color:red;
+}
+</style>
+</head>
+<body data-ng-app><!-- Preloader -->
+<div class="loading-container" >
+<img src="/images/ship_2019.gif" style="position: fixed; top: 50%; left: 50%;">
+
+<!--img src="/images/new_ship.gif"-->
+<!--div class="loading">
+<div class="l1">
+<div></div>
+</div>
+<div class="l2">
+<div></div>
+</div>
+<div class="l3">
+<div></div>
+</div>
+<div class="l4">
+<div></div>
+</div>
+</div-->
+</div><aside class="left-panel no-print">
+<div class="user text-center">
+<img src="/images/isu_person/small/p107087.jpg" >
+
+<h4 class="user-name"><a href="/isu_person_card/">Соколова Софья Сергеевна</a><br><br>ID:107087<br><br>Email: photo-sonya@mail.ru<br>Группа 9225<br>Факультет ФЦПТ<br>2409015</h4>
+<div class="dropdown user-login">
+<button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" aria-expanded="true">
+<i class="fa fa-circle status-icon available"></i> В сети <i class="fa fa-angle-down"></i>
+</button>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+<li role="presentation"><a role="menuitem" href="/?exit=exit"><i class="fa fa-circle status-icon signout"></i> Выйти</a></li>
+</ul>
+</div>
+<select class="form-control custom-form-control" name="post" onChange="if (this.value) window.location.href=this.value">
+<option value="/change_post/9616/" selected>Ведущий специалист</option>
+<option value="/change_post/11986/">Преподаватель 1</option>
+</select>
+</div>
+<nav class="navigation">
+<ul class="list-unstyled">
+<li >
+<a href="/">
+
+<i class="fa fa-home"></i>
+<span class="nav-label">Главная</span>
+</a>
+</li>
+<li >
+<a href="/nav/">
+
+<i class="fa fa-sitemap"></i>
+<span class="nav-label">Навигация</span>
+</a>
+</li>
+<li >
+<a href="#">
+
+<img src="/assets/images/icons/accaunt.svg" class="left_menu_icon">
+
+<span class="nav-label">Личный кабинет</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/isu_person_card/">Персональные данные</a></li>
+
+<li><a href="/reminder_note/">Календарь событий</a></li>
+
+<li><a href="/my_task_list/">Задачи</a></li>
+
+<li><a href="/user_company_list/">Мои компании</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="glyphicon glyphicon-inbox"></i>
+<span class="nav-label">Документооборот</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/doc_tree_list/">Документы</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Служебные записки</b></li>
+<li><a href="/list_memo/">Генератор<br>служебных записок</a></li>
+
+<li><a href="/list_decree_on_aprove_3/">Входящие служебные записки</a></li>
+
+<li><a href="/list_decree_out_aprove_3/">Исходящие служебные записки</a></li>
+
+<li><hr></li> <li><a href="/list_income/">Входящие документы</a></li>
+
+<li><hr></li>
+<li style="text-align:center;color:#FFF;"><b>Приказы</b></li>
+<li><a href="/list_decree/">Генератор приказов</a></li>
+
+<li><a href="/doc_close_list/">Входящие приказы</a></li>
+
+
+<li><hr></li> <li style="text-align:center;color:#FFF;"><b>Распоряжения</b></li>
+<li><a href="/list_bylaw/">Генератор Распоряжений</a></li>
+
+<li><a href="/doc_close_list/">Входящие распоряжения</a></li>
+
+
+<li><hr></li> <li style="text-align:center;color:#FFF;"><b>Облако</b></li>
+<li><a href="/cloud_doc_tree_list/">Файловое хранилище</a></li>
+
+<li><hr></li>
+<li style="text-align:center;color:#FFF;"><b>Командировки</b></li>
+<li><a href="/business_trip_list/">Командировки</a></li>
+
+<li><hr></li> <li><a href="/doc_close_list/">Именные документы</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-file-text-o"></i>
+<span class="nav-label">Информационные разделы</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/list_business_regulations/">Деловые регламенты</a></li>
+
+<li><a href="/software_list/">Программное обеспечение<br>Университета</a></li>
+
+<li><a href="/list_asp_docs/">Документы для аспирантов</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="glyphicon glyphicon-globe"></i>
+<span class="nav-label">Сайт подразделения</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/news_list/">Список новостей</a></li>
+
+<li><a href="/list_unit_tree_pages/">Статические страницы для сайта</a></li>
+
+<li><a href="/list_unit_tree_slider/">Слайдер для сайта</a></li>
+
+<li><a href="/list_unit_tree_site_number/">Цифры на главной</a></li>
+
+<li><a href="/list_unit_tree_testimonial/">Отзывы на сайт</a></li>
+
+<li><a href="/list_unit_tree_partner/">Партнеры</a></li>
+
+<li><a href="/list_unit_tree_menu/">Меню</a></li>
+
+<li><a href="/list_unit_tree_job/">Вакансии</a></li>
+
+<li><a href="/list_unit_tree_alumni/">Выпускники</a></li>
+
+<li><a href="/list_unit_tree_direction/">Направления, ПК, практики<br>школы, оборудование</a></li>
+
+<li><a href="/list_unit_tree_main/">Направления на главную</a></li>
+
+<li><a href="/list_unit_tree_reward/">Награды</a></li>
+
+<li><a href="/list_unit_tree_project/">Проекты</a></li>
+
+<li><a href="/list_unit_tree_lab/">Лаборатории</a></li>
+
+<li><a href="/list_unit_tree_consortium/">Консорциумы</a></li>
+
+<li><a href="/list_unit_tree_school/">Школы</a></li>
+
+<li><a href="/list_unit_tree_equipment/">Оборудование</a></li>
+
+<li><a href="/list_unit_tree_faq/">Часто задаваемые вопросы</a></li>
+
+<li><a href="/list_unit_tree_blog/">Блог</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="glyphicon glyphicon-fire"></i>
+<span class="nav-label">Мероприятия и новости</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/calendar/">Календарь событий</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-graduation-cap"></i>
+<span class="nav-label">Образовательный процесс</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/biblioteka/">Каталог библиотеки</a></li>
+
+<li><a href="/elib_list/">ЭБС СПбГМТУ</a></li>
+
+<li><a href="/view_opop_list/">Основные профессиональные<br>образовательные программы</a></li>
+<li><a href="/oldschedule/">Расписание для составления<br> справки МТО и КО</a></li>
+
+<li><a href="/doc_tree_list/231/">ФГОС ВО 3+</a></li>
+
+<li><a href="/viewpage/4/">Контакты по учебным планам</a></li>
+
+<!--li style="text-align:center;color:#FFF;"><b>Аккредитация 2018</b></li>
+<li><a href="/viewpage/2/">План подготовки к аккредитации</a></li>
+<li><a href="/doc_tree_list/282/">Вспомогательная документация</a></li>
+<li><a href="/oldschedule/">Расписание для составления<br> справки МТО и КО</a></li-->
+<li><a href="/akkred_download/">Выгрузка справок</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Контингент</b></li>
+<li><a href="/bypass_lists/">Обходные листы</a></li>
+
+<li><a href="/cert_of_edus/">Справки обучение для ВКР</a></li>
+
+<li><a href="/cert_of_edu_alls/">Справки об обучении</a></li>
+
+<li><a href="/diplom_of_edus/">Печать дипломов</a></li>
+
+<li><a href="/student_debts/">Долги студентов</a></li>
+
+<li><a href="/students_groups_card_list/">Карточки групп</a></li>
+
+<li><a href="/edu_statement_edit/">Обработка ведомостей<br> и разрешений</a></li>
+
+<li><a href="/training_sheet_admin_list/">Обработка ведомостей<br> и разрешений<br> преподавателей</a></li>
+<li><a href="/student_communication_platform_list/">Коммуникационная<br>площадка группы</a></li>
+<li><a href="/student_points_view/">Успеваемость</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-user"></i>
+<span class="nav-label">Абитуриент</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/application_school_visit_list/">Заявки на посещение школы</a></li>
+
+<li><a href="/fac_school_list/">Подшефные школы</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-gift"></i>
+<span class="nav-label">ДПО (Дополнительное<br> профессиональное образование)</span>
+</a>
+<ul class="list-unstyled">
+
+<li><h4 style="color: aliceblue; font-size:14px;margin-left: 10px">Управление</h4></li>
+<li><a href="/teacher_list_course_eduplan_schedule/">Расписание ДПО</a></li>
+
+<li><a href="/teacher_list_practice/">Проверка практических <br> занятий ДПО</a></li>
+
+<li><a href="/study_course_eduplan_list/">Курсы ДПО</a></li>
+
+<li><a href="/dpo_course_list/">Список программ ДПО</a></li>
+
+<li><h4 style="color: aliceblue;font-size:14px;margin-left: 10px">Обучение</h4></li>
+<li><a href="/list_dpo_course/">Мои курсы ДПО</a></li>
+
+<li><a href="/list_application_course_eduplan_calendar/">Мои заявки ДПО</a></li>
+
+<li class="item"><a href="/user_company_list/">Мои компании</a>
+
+<li><a href="/viewpage/5/">Инструкция</a></li>
+
+</ul>
+</li> <li >
+<a href="#">
+
+<i class="fa fa-gift"></i>
+<span class="nav-label">Центр дистанционного обучения</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/viewpage/5/">Инструкция</a></li>
+
+<li><a href="/module/webinar/doc_dist.pdf">Памятка</a></li>
+
+<li><a href="/webinar/">Вебинары</a></li>
+
+<li><h4 style="color: aliceblue; font-size:14px;margin-left: 10px">Преподаватель</h4></li>
+
+<li><a href="/teacher_lecture_list/">Лекции</a></li>
+
+<li><a href="/teacher_practice_list/">Практические задания (Эссе)</a></li>
+
+<li><a href="/teacher_test_list/">Тесты</a></li>
+
+<li><a href="/teacher_video_list/">Ссылки (Видео, webinar и др)</a></li>
+
+<li><a href="/teacher_doc_tree_list/">Файловое хранилище</a></li>
+
+<li><a href="/teacher_course_date_list/">Потоки</a></li>
+
+<li><a href="/exam_list/">Экзамен</a></li>
+
+<li><a href="/training_sheet_list/">Ведомости</a></li>
+
+<li><a href="/edu_statement_digital_list/">Ведомости из деканата</a></li>
+
+<li class="item">
+<a href="/diary_list/">Текущий контроль</a>
+
+</li>
+<li><a href="/teacher_list_course_eduplan_schedule/">Расписание ДПО</a></li>
+
+<li><a href="/teacher_list_practice/">Проверка практических <br> занятий ДПО</a></li>
+
+<li><h4 style="color: aliceblue;font-size:14px;margin-left: 10px">Администратор</h4></li>
+<li><a href="/dean_edu_statement_digital_list/">Ведомости виртуальные Деканат</a></li>
+
+<li><h4 style="color: aliceblue;font-size:14px;margin-left: 10px">Обучение</h4></li>
+<li><a href="/view_course_list/">Курсы</a></li>
+
+<li><a href="/study_course_eduplan_list/">Курсы ДПО</a></li>
+
+<li><a href="/engineering_course_list/">Курсы инженерных классов</a></li>
+
+<!--li><a href="/distant_osk/">Форум «Инженеры будущего»</a></li-->
+<li><a href="/distant_statistic/">Статистика</a></li>
+
+<li><a href="/list_application_course_date/">Заявки</a></li>
+
+<li><a href="/list_student_course/">Мои курсы</a></li>
+
+<li><a href="/list_dpo_course/">Мои курсы ДПО</a></li>
+
+<li><a href="/list_application_course_eduplan_calendar/">Мои заявки ДПО</a></li>
+
+<li class="item">
+<a href="/diary_student/">Текущий контроль</a>
+
+<span class="badge bg-warning notify-badge">Новое</span>
+</li>
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-user"></i>
+<span class="nav-label">Отчеты</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/report_contingent/">Контингент</a></li>
+
+<li><a href="/report_contingent_fac/">Контингент по факультетно</a></li>
+
+<li><a href="/report_army/">Постановка на учет<br> в военкомат</a></li>
+
+<li><a href="/report_point/">Успеваемость</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-user"></i>
+<span class="nav-label">Пользователи</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/isu_person_search/">Поиск персоналий</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-certificate"></i>
+<span class="nav-label">Стипендии</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/stip_list/">Стипендии</a></li>
+
+<li><a href="/application_material_aid_list/">Мои заявки <br>на материальную помощь</a></li>
+
+<li><a href="/application_stip_list/">Заявки на стипендии</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-user"></i>
+<span class="nav-label">Ученый совет</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/academic_council_decision/">Решения Ученого совета</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-briefcase"></i>
+<span class="nav-label">Административная деятельность</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/swim_pool_application_list/">Заявки на занятия в бассейн</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-puzzle-piece"></i>
+<span class="nav-label">Оперативное управление</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/task_list/">Мои задачи</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-tree"></i>
+<span class="nav-label">Деканат</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/dean_diary/">Дневник посещения</a></li>
+
+<li><a href="/studybook_add/">Генератор зачетной книжки</a></li>
+
+<li><a href="/report_ao/">Академический отпуск</a></li>
+
+<li><a href="/application_academic_leave_list/">Заявки на академический отпуск</a></li>
+
+<li><a href="/report_check_writ/">Потеряшки</a></li>
+
+<li><a href="/report_pay_edu/">Контрактники</a></li>
+
+</ul>
+</li>
+<li><a href="/doc_tree_list/31/">Показатели приоритета 2030</a></li>
+
+<li >
+<a href="#">
+
+<i class="glyphicon glyphicon-briefcase"></i>
+<span class="nav-label">Управление персоналом</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/tabel_list/">Табель учета РВ</a></li>
+
+</ul>
+</li>
+<li >
+<a href="/phonelist/">
+
+<i class="fa fa-book"></i>
+<span class="nav-label">Телефонный справочник</span>
+</a>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-yelp"></i>
+<span class="nav-label">Заявки</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/viewpage/5/">Инструкция</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Аудитории</b></li>
+<li><a href="/application_room_rent_list/">Бронирование помещений</a></li>
+
+<li><a href="/application_room_rent_calendar/">Календарь</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>PR-служба</b></li>
+<li><a href="/application_photographer_list/">Заявка на фотосъемку</a></li>
+
+<li><a href="/application_photographer_calendar/">Календарь</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Конкурсы</b></li>
+<li><a href="/application_fund_list/">Заявки на конкурсы</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Образовательная деятельность</b></li>
+<li><a href="/application_english_list/">Иностранный язык</a></li>
+
+<!--li><a href="/application_edu_list/">Повышения квалификации</a></li-->
+<li style="text-align:center;color:#FFF;"><b>Бухгалтерия</b></li>
+<li><a href="/application_for_bookkeepings/">Ваши заявки</a></li>
+
+
+<li><a href="/payslip/">Расчётный листок</a></li>
+
+<li><a href="/application_bookkeeping_payedu_list/">Запрос на Справку об оплате услуг <br>(оплату обучения)</a></li>
+<li><a href="/application_bookkeeping_return_list/">Запрос на возврат<br>денежных средств</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Отдел кадров</b></li>
+<li><a href="/application_for_hrms/">Ваши заявки</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Спортивный комплекс</b></li>
+<li><a href="/swim_pool_application_list/">Заявки на занятия<br> в бассейн</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Кафедра Физического воспитания</b></li>
+<li><a href="/application_sport_list/">Ваши заявки<br>о группе здоровья</a></li>
+
+<li><a href="/application_sport_schedule_list/">Расписание занятий<br>студент</a></li>
+
+<li><a href="/application_sport_schedule_emp_list/">Расписание занятий<br>сотрудник</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Студенческий отдел кадров</b></li>
+<li><a href="/application_hrm_student_list/">Ваши заявки</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Военно-учетный стол</b></li>
+<li><a href="/application_army_list/">Ваши заявки</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Склад</b></li>
+<li><a href="/application_stationery_list/">Заявки на канц. товары</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Информационные технологии</b></li>
+<li><a href="/application_for_equipments/">Ваши заявки на оборудование</a></li>
+
+<li><a href="/application_for_repair_list/">Ваши заявки на ремонт</a></li>
+
+
+<li><a href="/application_for_emails/">Вопросы по ИСУ и корп. почте</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>СМК</b></li>
+<li><a href="/application_for_smcs/">Заявить отв. по СМК</a></li>
+
+<li style="text-align:center;color:#FFF;"><b>Пропуска</b></li>
+<li><a href="/application_for_passoffices/">Заказать пропуск</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-folder-open" aria-hidden="true"></i>
+<span class="nav-label">Система управления качеством</span>
+</a>
+<ul class="list-unstyled">
+<li>
+<a target="_blank" href="/syk_doc_tree/1/">Главная</a>
+
+</li>
+
+<li>
+<a target="_blank" href="/syk_doc_tree/45/">Утвержденные документы</a>
+
+</li>
+
+<li>
+<a target="_blank" href="/watch_unit_tree/">Структура СПбГМТУ</a>
+
+</li>
+
+<li>
+<a target="_blank" href="/syk_doc_tree/544/">Аудиты</a>
+
+</li>
+
+<li>
+<a target="_blank" href="/syk_doc_tree/41/">ГОСТ</a>
+
+</li>
+
+<!--li>
+<a target="_blank" href="/syk_doc_tree/276/">Типовые методические инструкции</a>
+</li-->
+
+<li>
+<a target="_blank" href="/syk_doc_tree/549/">Технический архив</a>
+
+</li>
+
+<hr>
+
+<li>
+<a target="_blank" href="/syk_responsible/">Кабинет ответственного</a>
+
+</li>
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="glyphicon glyphicon-user"></i>
+<span class="nav-label">Портфолио</span>
+</a>
+<ul class="list-unstyled">
+<li>
+<b style="color:#FFF;"><i class="fa fa-users"></i> Студент</b>
+</li>
+
+<li><a href="/portfolio_practice/">-> Практика</a></li>
+
+<li><a href="/portfolio_course_work/">-> Курсовые</a></li>
+
+<li><a href="/portfolio_dopedu/">-> Доп. Образование</a></li>
+
+<li><a href="/portfolio_nir/">-> НИР</a></li>
+
+<li><a href="/portfolio_conf/">-> Конференции</a></li>
+
+<li><a href="/portfolio_competition/">-> Конкурсы</a></li>
+
+<li><a href="/portfolio_publication/">-> Публикации</a></li>
+
+<li><a href="/portfolio_olymp/">-> Олимпиады</a></li>
+
+<li><a href="/portfolio_oss/">-> ОСС</a></li>
+
+<li><a href="/portfolio_sport/">-> Спорт</a></li>
+
+<li><a href="/portfolio_creative_achievement/">-> Творческие достижения</a></li>
+
+<li><a href="/portfolio_event/">-> Мероприятия</a></li>
+
+<li><a href="/assets/scripts/portfolio_studentprint.php">-> Печать портфолио</a></li>
+
+<li><a href="/portfolio_snils/">-> СНИЛС</a></li>
+
+<li><a href="/portfolio_inn/">-> ИНН</a></li>
+
+
+<li>
+<b style="color:#FFF;"><i class="fa fa-mortar-board"></i> ППС</b>
+</li>
+<li><a href="/portfolio_publication/">-> Публикации</a></li>
+
+<li><a href="/portfolio_disser_head/">-> Диссертации,<br>защищенные под руководством</a></li>
+
+<li><a href="/portfolio_training/">-> Повышение квалификации</a></li>
+
+<li><a href="/portfolio_nir/">-> НИР</a></li>
+
+<li><a href="/portfolio_conf/">-> Конференции</a></li>
+
+<li><a href="/portfolio_social_active/">-> Общественная деятельность</a></li>
+
+<li><a href="/portfolio_reward/">-> Грамоты,<br>благодарности, награды</a></li>
+
+<li><a href="/portfolio_edu_prog/">-> Участие в программах<br>дополнительного образования</a></li>
+<li>
+<b style="color:#FFF;"><i class="fa fa-mortar-board"></i> НПР</b>
+</li>
+<li><a href="/portfolio_publication/">-> Публикации</a></li>
+
+<li><a href="/portfolio_tech_doc/">-> Выпущенная техническая<br>документация</a></li>
+
+<li><a href="/portfolio_conf/">-> Участие в <br>научных мероприятиях</a></li>
+
+<li><a href="/portfolio_rid/">-> РИД</a></li>
+
+<li><a href="/portfolio_social_active/">-> Членство в<br>профессиональных<br>сообществах</a></li>
+
+<li><a href="/portfolio_disser_head/">-> Диссертации,<br>защищенные под руководством</a></li>
+
+<li><a href="/portfolio_sci_phd/">-> Подготовка научных кадров<br>Аспиранты и докторанты</a></li>
+<li><a href="/portfolio_sci_review/">-> Подготовка научных кадров<br>Отзывы</a></li>
+
+<li><a href="/portfolio_sci_hrm/">-> Подготовка научных кадров<br>привлечение кадров<br>высшей квалификации</a></li>
+<li><a href="/portfolio_nir/">-> НИР</a></li>
+
+<li><a href="/portfolio_training/">-> Повышение квалификации</a></li>
+
+<li><a href="/portfolio_reward/">-> Грамоты,<br>благодарности, награды</a></li>
+
+<li><a href="/assets/scripts/portfolio_sci.php">-> Печать портфолио НПР</a></li>
+
+<li>
+<b style="color:#FFF;"><i class="glyphicon glyphicon-certificate"></i> Аспирантура</b>
+</li>
+<li><a href="/portfolio_publication/">-> Публикации</a></li>
+
+<li><a href="/portfolio_practice/">-> Практика</a></li>
+
+<li><a href="/asp_achievement/">-> Достижения аспирантов</a></li>
+
+<li><a href="/asp_disser_card/">-> Информация аспиранта</a></li>
+
+<li><a href="/portfolio_training/">-> Повышение квалификации</a></li>
+
+<li><a href="/portfolio_nir/">-> НИР</a></li>
+
+<li><a href="/portfolio_conf/">-> Конференции</a></li>
+
+<li><a href="/portfolio_social_active/">-> Общественная деятельность</a></li>
+
+<li><a href="/portfolio_reward/">-> Грамоты,<br>благодарности, награды</a></li>
+
+<li><a href="/portfolio_snils/">-> СНИЛС</a></li>
+
+<li><a href="/portfolio_inn/">-> ИНН</a></li>
+
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-gavel"></i>
+<span class="nav-label">ЦПО</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/doc_tree_list/503/">ПРИОРИТЕТ 2030</a></li>
+
+<li><a href="/list_authority/">Мои доверенности</a></li>
+
+<li><a href="/doc_tree_list/493/">Формы документов</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-rub"></i>
+<span class="nav-label">УЗЛ</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/application_uzl_list/">Мои заявки <br>на размещения заказа</a></li>
+
+<!--li><a href="/uzl_docs/">Нормативные документы</a></li-->
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-cubes"></i>
+<span class="nav-label">Склад и ИК</span>
+</a>
+<ul class="list-unstyled">
+<li style="text-align:center;color: white;"><b>Кабинет МОЛ</b></li>
+<!-- <li><a href="/warehouse_cab/">Остатки</a></li>-->
+<li><a href="/mol_commission_list/">Комиссии</a></li>
+
+<li><a href="/warehouse_cab_new/">Остатки / Создание документов</a></li>
+
+<li><a href="/warehouse_mol_all/">Все остатки</a> </li>
+
+<li><a href="/mol_docs/">Документы на согласовании</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-sitemap"></i>
+<span class="nav-label">Структурные подразделения</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/watch_unit_tree/">Просмотр кодификатора</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-bullhorn"></i>
+<span class="nav-label">Фонды и программы</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/list_funds/">Фонды и программы</a></li>
+
+</ul>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-calendar"></i>
+<span class="nav-label">Расписание</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="http://www.smtu.ru/ru/listschedule/" target="_blank">Список групп</a></li>
+
+</ul>
+</li>
+
+<li >
+<a target="_blank" href="https://www.smtu.ru/ru/page/501/">
+
+<i class="fa fa-info-circle"></i>
+<span class="nav-label">Помощь</span>
+</a>
+</li>
+<li >
+<a href="#">
+
+<i class="fa fa-info"></i>
+<span class="nav-label">Платформа ИСУУ</span>
+</a>
+<ul class="list-unstyled">
+<li><a href="/about/" target="_blank">О платформе</a></li>
+
+<li><a href="/viewpage/9/">Контакты поддержки</a></li>
+
+<li><a href="/privacy_policy/">Политика конфиденциальности</a></li>
+
+<li><a href="/terms_of_use/">Пользовательское соглашение</a></li>
+
+<li><a href="/viewpage/10/">Официальные дилеры</a></li>
+
+</ul>
+</li> </ul>
+</nav>
+</aside>
+<section class="content">
+<header class="top-head container-fluid no-print">
+<button type="button" class="navbar-toggle pull-left">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<nav class=" navbar-default hidden-xs" role="navigation">
+<ul class="nav navbar-nav">
+<li class="top_date">
+Сегодня: 9 Февраля 2026 года,
+Понедельник,
+верхняя неделя
+</li>
+</ul>
+</nav>
+<ul class="nav-toolbar no-print">
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown">
+
+<i class="fa fa-comments-o"></i>
+<span class="badge bg-warning">0</span>
+</a>
+<div class="dropdown-menu md arrow pull-right panel panel-default arrow-top-right messages-dropdown">
+<div class="panel-heading">
+Сообщения
+</div>
+<div class="list-group">
+<a href="/message_list/" class="btn btn-info btn-flat btn-block">Все сообщения</a>
+
+</div>
+</div>
+</li>
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown">
+
+<i class="fa fa-money"></i>
+<span class="badge">2</span>
+</a>
+<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+<div class="panel-heading">
+Фонды, программы, конференции
+</div>
+<div class="list-group">
+<a href="/view_fund/4968/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Конкурс на соискание премий Правительства Санкт-Петербурга за выдающиеся достижения в области высшего образования и среднего профессионального образования в 2026 году (Конкурс)</h5>
+</div>
+</div>
+</a>
+<a href="/view_fund/4969/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">IV всероссийский конкурс «Изобретатель года» (Конкурс)</h5>
+</div>
+</div>
+</a>
+<a href="/list_funds/" class="btn btn-info btn-flat btn-block">Все фонды и программы</a>
+
+</div>
+</div>
+</li>
+
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown">
+
+<i class="fa fa-warning"></i>
+<span class="badge">20</span>
+</a>
+<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+<div class="panel-heading">
+Командировки отчет </div>
+<div class="list-group">
+<a href="/business_trip_money_report_card/2325/hh/8f33ce77e2b7c5ca6bc3a99a3c622717d37a21318d1f0beb41fc683a8eee415d/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Акселератор в г.Москва Соколова Софья Сергеевна 2501<br>(27.01.2026 14:58:33)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="panel-heading">
+Отчет по визиту в школу </div>
+<div class="list-group">
+<a href="/application_school_visit_view/232/hh/d21e7448d004d4529c4f24b978c64f2f27173388a4c5c0161140ac8e1692f9f1/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(28.11.2025 08:28:58)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/234/hh/2440fb46f3cf0265bc7f80dadfbdaf9b1840a1be6c990836c03836667b800750/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(28.11.2025 08:35:01)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/235/hh/af21251279cb429aece237f8d247da5ae9a659fab6f7900752004288a73909f5/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(28.11.2025 08:42:00)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/236/hh/801b68677763dcbc76f46999bd0ad5dc70050fab7bb709e7d6a69ef1198e2c1e/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(28.11.2025 08:43:46)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/237/hh/73f948ef7dbf768bf568d2147bdb5f5d3fd8a37976234d6d11eae93d69a446a7/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(28.11.2025 08:46:02)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/238/hh/e2420149747f0ebfff074afb8a345fa99a0af36cce0350c3b3cb1262d5ea24ee/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(28.11.2025 08:50:13)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/287/hh/db18982bef8f5d5498857b3fc99442a1ced89dde30aff1f97ce34b5f4047956e/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:49:44)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/288/hh/4e62d4d3f54d4b3c9d6feb9d2d90ebb896a2df5e77c50adb61ac2a0cca98dbeb/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:50:36)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/289/hh/725a6820722d881bd023a3291d4a5976021c8c25861f52f7c4090314f57a40f3/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:51:20)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/290/hh/4ba73843d0f7bd48612dc3edc23905210b9746cc88e177909718c830e1ab61b0/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:52:47)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/291/hh/083b5d9c61a4d1e3e95cd95adc6ccf5ab8ec78e80956497a6151f5c420adf314/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:53:39)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/292/hh/e869e9e681169608ae54d27c28b12e6cd027153af9dd9c9248052ba9b078529d/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:54:42)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/293/hh/7374e549016c4cb22f8ab350142f314334b308f4fe838e4a08bf26fc0614325e/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:55:38)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/294/hh/9d5d51db0bf94524fa87471a6fb122349955a25b73051b87e415c9acbc12c0ff/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(04.12.2025 11:56:57)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/302/hh/71f0fc122b99a8c71d34bc3ecefd4a108c35e020d1b8b702ad262e33ef02064a/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(05.12.2025 15:47:22)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/303/hh/cf215e559ab189a3f86886e00964ccefcbf7d25e20bb9bd3e054f53d9f9b6694/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(05.12.2025 15:48:17)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/345/hh/cfbb7fc6598e58e89f202732cd7d83e932b8d0bf368b158f5ee1111d824af921/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(19.12.2025 18:03:15)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/346/hh/86e0a6c6a98510a8e68c208504d449409022790f9a696e057d17d92de64b8ec3/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(19.12.2025 18:04:31)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/application_school_visit_view/347/hh/7ee9536d1873a80c2b42a6f56a1dcf9cd8a4d7e350585b5f5c993c9dfbf9e0d5/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соколова Софья Сергеевна 2501<br>(19.12.2025 18:05:09)</h5>
+</div>
+</div>
+</a>
+</div>
+</div>
+</li>
+
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown">
+
+<i class="fa fa-graduation-cap"></i>
+<span class="badge">14</span>
+</a>
+<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+<div class="panel-heading">
+Ведомости
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/15775/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ведомость 20126<br>(Управление проектами)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/10003/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ведомость 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/8272/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/7679/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/7377/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20220<br>(Информационные технологии)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/7249/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20126<br>(Методы принятия решений)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/7248/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20126<br>(Управление проектами)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/5698/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/5697/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/5696/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/5695/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Разрешение 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/3896/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ведомость 20126<br>(Управление проектами)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/3895/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ведомость 20126<br>(Методы принятия решений)</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="list-group">
+<a href="/edu_statement_digital_edit/3892/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ведомость 20226<br>(Научно-технический семинар)</h5>
+</div>
+</div>
+</a>
+</div>
+</div>
+</li>
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown">
+
+<i class="fa fa-bell-o"></i>
+<span class="badge">30</span>
+</a>
+<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+<div class="panel-heading">
+Уведомления
+</div>
+<div class="list-group">
+<div class="media">
+<div class="media-body" style="font-weight: bold;">
+Заявка на повышенную стипендию
+</div>
+</div>
+<a href="/application_stip_add/3486/hh/64377a5b07b27e67838988a114a0b761244cac0dea14bf3bb9638ff62669b0d7/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Зайцева Ульяна Анатольевна (20302)<br>(28.01.2026 14:22:22)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3538/hh/7f68b5a66cf59d4215ec62930b696d08c1006fc254ad322c0fc506ff8756bf59/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Пилипчук Катерина Николаевна (20302)<br>(30.01.2026 22:47:36)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3540/hh/fa3d25ffc09ed4f47f5540d3079758c13fbe22526ca2b3dd891fe2d8289d58c0/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Авгулевич Яна Даниловна (20213)<br>(30.01.2026 22:58:04)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3570/hh/de12110174bc078ccedcbd64c16d6ab7bf8c351f3170cac78bd9d9dd59b53f2d/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Беляцкая Анастасия Станиславовна (20131)<br>(02.02.2026 13:49:02)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3572/hh/83989e255d2f3fbe3665defa680662ba997f59a5ab8d2f4b392ab4f9deae4372/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Бессчастнов Сергей Михайлович (20291)<br>(02.02.2026 14:48:59)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3574/hh/59f3c134446d9bc418a98dc9578c3c0da6607e55238ab2c0db004715ee8a0416/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Федорова Виктория Александровна (20450)<br>(02.02.2026 16:38:57)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3587/hh/ccafcbc8f041da21cb96dcc255f7b8040798a134c5a4652a6255e18e889dd1fd/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Вайнт Никита (20491)<br>(02.02.2026 18:18:59)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3588/hh/96c7ee1aafe1e07a116c5319415b6212d3323fbad403da9873b99a9a28f0b36d/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Сенник Ирина Андреевна (20130)<br>(02.02.2026 18:31:40)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3612/hh/067febc0cdf8c6c558cab47c14572c5e09b3d0a76fb4c3f04f004c69b0e1ba67/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Пертякова Яна Сергеевна (20413)<br>(02.02.2026 23:29:28)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3630/hh/7f9821ed7ee05de86a2cfb6afc93f7036c91161959e6fad5a86a40f9287793df/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Моисеева Марина Аркадьевна (20271)<br>(03.02.2026 15:22:53)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3635/hh/e0fa0c228a8e3e79059613e389acc87a9b1f638e58dbdc1a8fc0e5dd50aba838/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Щеулова Екатерина Николаевна (20320)<br>(03.02.2026 17:37:50)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3657/hh/6c3e60106cad4645cf7e877f8b43ad058f5d47f3fef9b12829d44138c800493e/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Бондаренко Яна Алексеевна (20221)<br>(04.02.2026 15:26:02)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3660/hh/ade20153d770d65cc7f77caef3f8f4bed64ea69ae15b1c83ea89f820c7dec6d0/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Труфанова Валерия Витальевна (20290)<br>(04.02.2026 16:27:09)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3663/hh/a455f1b531613936e0405057ec60a82b88387dee0b9142c751c642d9e533cb12/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ковалёв Юрий Юрьевич (20290)<br>(04.02.2026 18:27:27)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3414/hh/8a696981021c8febe40d723c4bdef7faecacfc98fba054467224a217be7a57c9/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Андреев Кирилл Иванович (20130)<br>(22.01.2026 13:42:30)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3421/hh/94343a0184554a60c72e739792ab64edbfd04d832ee4666bff6c286f5a368b21/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Счетчиков Юрий Андреевич (20420)<br>(22.01.2026 21:10:15)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3439/hh/518bc55d39b24d79fd4c82c59b80715a31f9d10cb5ebf9c0be72d5678ad4957d/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Кочура Елизавета Геннадьевна (20178)<br>(24.01.2026 23:39:38)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3450/hh/a81e8b200e9a1c3a56bf95e6b3127d5effea57857a35c253c1026ff9582d66c8/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Лукьянов Илья Вячеславович (20320)<br>(25.01.2026 18:05:54)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3456/hh/8715c2abb2b615aa4be6e28869f2be4dd82b565c94072c4b811aff3483ba0ee4/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Байшев Марк Ярославович (20513)<br>(26.01.2026 10:33:22)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3457/hh/803959e0721bb974ee37af3ec50ca0dc0d8ad7ead5183edfddc30ff6bd2d3ed0/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Мазеев Вячеслав Александрович (20513)<br>(26.01.2026 11:48:18)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3487/hh/41ef7e227a1c6c74025052476af89a28e258df9e9a49252a8825ea080a862d38/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Попова Валентина Евгеньевна (20226)<br>(28.01.2026 14:35:15)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3515/hh/40ee403f9e6ff8df6002f37a48df1c1df976a12190bb6bca0146b39823314355/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Вайнт Никита (20491)<br>(30.01.2026 13:28:13)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3537/hh/0d4415ee020ee55b728123c17bc0a5e69542c485fb84ab687161bee802ae7928/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Пилипчук Катерина Николаевна (20302)<br>(30.01.2026 22:44:03)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3559/hh/08966325620624d10f1e58d41292301e5e1c0dca19db501389633470446a7357/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Замятина Наталия Александровна (20450)<br>(01.02.2026 15:33:59)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3568/hh/f6af95eececcd4ca778bd8b4b568119d9934f6218ba09f190aa68a3b1d8adbd0/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Яковлева Полина Андреевна (20231)<br>(02.02.2026 13:08:02)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3595/hh/6e6c4248131da366f2971373dcf0b6fc66b2b4505ab3e05852d14dcb08bda9d5/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Саранцев Егор Олегович (20302)<br>(02.02.2026 21:17:06)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3599/hh/a939d4fd54c6df5905f2bc0eadf5b3dc9c39f968b8171d19287a2ca58f78c2c1/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Соловьёв Даниил Ильич (20302)<br>(02.02.2026 21:38:41)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3611/hh/170b91add5e3745697ff32839b4f09572244c33c6e1887cf855175cc5eed1148/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Пертякова Яна Сергеевна (20413)<br>(02.02.2026 23:21:58)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3619/hh/12abbd71933f666913b7afa8b764489f28a704a2f47f60e20183078ba61a8856/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Докичев Егор Алексеевич (20491)<br>(03.02.2026 10:42:26)</h5>
+</div>
+</div>
+</a>
+<a href="/application_stip_add/3620/hh/6efb5b1ebc375e37c04ada2e0667761b7e36e7361816d5cdd84757cab81c912c/" class="list-group-item">
+
+<div class="media">
+<div class="media-body">
+<h5 class="media-heading">Ложкин Владислав Александрович (20127)<br>(03.02.2026 11:13:24)</h5>
+</div>
+</div>
+</a>
+</div>
+</div>
+</li>
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown">
+
+<i class="glyphicon glyphicon-star"></i>
+<span class="badge" id="not_user_noti">0</span>
+</a>
+<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+<div class="list-group">
+<span class="list-group-item">
+<div class="media">
+<div class="media-body">
+<a href="#" data-toggle="modal" data-target="#modal-user_noti">
+
+Добавить напоминание
+</a>
+</div>
+</div>
+</span>
+</div>
+
+</div>
+</li>
+<div class="modal fade" id="modal-user_noti" tabindex="-2" role="dialog" aria-labelledby="my_user_noti_ModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">
+<span aria-hidden="true">&times;</span>
+<span class="sr-only">Закрыть</span>
+</button>
+<h4 class="modal-title" id="my_user_noti_ModalLabel">Напоминание</h4>
+</div>
+<div class="modal-body">
+<form role="form" name="user_noti" method="post" enctype="application/x-www-form-urlencoded" action="?">
+<input type="hidden" name="act_user_noti" value="add">
+<input type="hidden" name="act_key" value="6989b8c10c9e8">
+<div class="form-group">
+<label for="user_noti_title">Название</label>
+<input type="text" class="form-control" id="user_noti_title" name="user_noti_title" placeholder="" value="" required>
+</div>
+<div class="form-group">
+<label class="control-label" for="remind_time">Когда напомнить</label>
+<input name="remind_time" id="remind_time" type='text' class="form-control input_datetime" value="2026/02/10 13:36" required />
+</div>
+<div class="form-group">
+<label for="text">Тект</label>
+<textarea class="form-control" id="text" name="text"></textarea>
+</div>
+<div class="form-group">
+<label for="link">Ссылка</label>
+<input type="text" class="form-control" id="link" name="link" placeholder="" value="/students_groups_card_event/20100/">
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+<button type="submit" class="btn btn-primary">Напомнить</button>
+</form>
+</div>
+</div>
+</div>
+</div> <li class="no-print">
+<a href="#" title="Пользователей On-Line 1400">
+
+<i class="fa fa-users"></i>
+<span class="badge bg-success" style="width: 30px; background-color: green !important;">1400</span>
+</a>
+</li>
+<li class="dropdown no-print">
+<a href="#" data-toggle="dropdown"><i class="fa fa-ellipsis-v"></i></a>
+
+<div class="dropdown-menu lg pull-right arrow panel panel-default arrow-top-right">
+<div class="panel-heading">
+Больше приложений
+</div>
+<div class="panel-body text-center">
+<div class="row">
+<div class="col-xs-6 col-sm-4"><a href="/message_list/" class="text-green"><span class="h2"><i class="fa fa-envelope-o"></i></span><p class="text-gray no-margn">Сообщения</p></a></div>
+<div class="col-xs-6 col-sm-4"><a href="/calendar/" class="text-purple"><span class="h2"><i class="fa fa-calendar-o"></i></span><p class="text-gray no-margn">Мероприятия</p></a></div>
+<div class="col-xs-12 visible-xs-block"><hr></div>
+<div class="col-xs-6 col-sm-4"><a href="/isu_person_card/" class="text-red"><span class="h2"><i class="fa fa-user"></i></span><p class="text-gray no-margn">ЛК</p></a></div>
+<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs"><hr></div>
+<div class="col-xs-6 col-sm-4"><a href="/doc_tree_list/" class="text-yellow"><span class="h2"><i class="fa fa-folder-open-o"></i></span><p class="text-gray">Документы</p></a></div>
+<div class="col-xs-12 visible-xs-block"><hr></div>
+<div class="col-xs-6 col-sm-4"><a href="/my_task_list/" class="text-primary"><span class="h2"><i class="fa fa-flag-o"></i></span><p class="text-gray">Задачи</p></a></div>
+<div class="col-xs-6 col-sm-4"><a href="/list_funds/" class="text-primary"><span class="h2"><i class="fa fa-money"></i></span><p class="text-gray">Фонды и программы</p></a></div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</header>
+<div class="warper container-fluid"><div class="warper container-fluid">
+<div class="page-header">
+<h1>
+Посещаемость граппы 20100 <a class="btn btn-success pull-right" href="/students_groups_card_view/20100/" style="text-decoration: underline;">К карточки группы</a>
+
+</h1>
+</div>
+<div class="panel panel-default">
+<div style="overflow-x: scroll;">
+<div class="panel-body table-responsive">
+<select class="form-control no-print" name="gr" onChange="if (this.value) window.location.href=this.value">
+<option value="/students_groups_card_event/20100/sd/202209/">Сентябрь 2022</option>
+<option value="/students_groups_card_event/20100/sd/202210/">Октябрь 2022</option>
+<option value="/students_groups_card_event/20100/sd/202211/">Ноябрь 2022</option>
+<option value="/students_groups_card_event/20100/sd/202212/">Декабрь 2022</option>
+<option value="/students_groups_card_event/20100/sd/202301/">Январь 2023</option>
+<option value="/students_groups_card_event/20100/sd/202302/">Февраль 2023</option>
+<option value="/students_groups_card_event/20100/sd/202303/">Март 2023</option>
+<option value="/students_groups_card_event/20100/sd/202304/">Апрель 2023</option>
+<option value="/students_groups_card_event/20100/sd/202305/">Май 2023</option>
+<option value="/students_groups_card_event/20100/sd/202306/">Июнь 2023</option>
+<option value="/students_groups_card_event/20100/sd/202307/">Июль 2023</option>
+<option value="/students_groups_card_event/20100/sd/202308/">Август 2023</option>
+<option value="/students_groups_card_event/20100/sd/202309/">Сентябрь 2023</option>
+<option value="/students_groups_card_event/20100/sd/202310/">Октябрь 2023</option>
+<option value="/students_groups_card_event/20100/sd/202311/">Ноябрь 2023</option>
+<option value="/students_groups_card_event/20100/sd/202312/">Декабрь 2023</option>
+<option value="/students_groups_card_event/20100/sd/202401/">Январь 2024</option>
+<option value="/students_groups_card_event/20100/sd/202402/">Февраль 2024</option>
+<option value="/students_groups_card_event/20100/sd/202403/">Март 2024</option>
+<option value="/students_groups_card_event/20100/sd/202404/">Апрель 2024</option>
+<option value="/students_groups_card_event/20100/sd/202405/">Май 2024</option>
+<option value="/students_groups_card_event/20100/sd/202406/">Июнь 2024</option>
+<option value="/students_groups_card_event/20100/sd/202407/">Июль 2024</option>
+<option value="/students_groups_card_event/20100/sd/202408/">Август 2024</option>
+<option value="/students_groups_card_event/20100/sd/202409/">Сентябрь 2024</option>
+<option value="/students_groups_card_event/20100/sd/202410/">Октябрь 2024</option>
+<option value="/students_groups_card_event/20100/sd/202411/">Ноябрь 2024</option>
+<option value="/students_groups_card_event/20100/sd/202412/">Декабрь 2024</option>
+<option value="/students_groups_card_event/20100/sd/202501/">Январь 2025</option>
+<option value="/students_groups_card_event/20100/sd/202502/">Февраль 2025</option>
+<option value="/students_groups_card_event/20100/sd/202503/">Март 2025</option>
+<option value="/students_groups_card_event/20100/sd/202504/">Апрель 2025</option>
+<option value="/students_groups_card_event/20100/sd/202505/">Май 2025</option>
+<option value="/students_groups_card_event/20100/sd/202506/">Июнь 2025</option>
+<option value="/students_groups_card_event/20100/sd/202507/">Июль 2025</option>
+<option value="/students_groups_card_event/20100/sd/202508/">Август 2025</option>
+<option value="/students_groups_card_event/20100/sd/202509/">Сентябрь 2025</option>
+<option value="/students_groups_card_event/20100/sd/202510/">Октябрь 2025</option>
+<option value="/students_groups_card_event/20100/sd/202511/">Ноябрь 2025</option>
+<option value="/students_groups_card_event/20100/sd/202512/">Декабрь 2025</option>
+<option value="/students_groups_card_event/20100/sd/202601/">Январь 2026</option>
+<option value="/students_groups_card_event/20100/sd/202602/" selected>Февраль 2026</option>
+</select>
+<br>
+<div style="overflow-x: scroll;">
+<table class="table table-striped table-bordered basic-datatable" id="attendanceTableMarch">
+    <thead>
+        <tr>
+            <th>№</th>
+            <th>ФИО</th>
+            <!-- Март 2026: 31 день -->
+            <td class="danger">01<br>Вс</td>
+            <td>02<br>Пн</td>
+            <td>03<br>Вт</td>
+            <td>04<br>Ср</td>
+            <td>05<br>Чт</td>
+            <td>06<br>Пт</td>
+            <td class="warning">07<br>Сб</td>
+            <td class="danger">08<br>Вс</td>
+            <td>09<br>Пн</td>
+            <td>10<br>Вт</td>
+            <td>11<br>Ср</td>
+            <td>12<br>Чт</td>
+            <td>13<br>Пт</td>
+            <td class="warning">14<br>Сб</td>
+            <td class="danger">15<br>Вс</td>
+            <td>16<br>Пн</td>
+            <td>17<br>Вт</td>
+            <td>18<br>Ср</td>
+            <td>19<br>Чт</td>
+            <td>20<br>Пт</td>
+            <td class="warning">21<br>Сб</td>
+            <td class="danger">22<br>Вс</td>
+            <td>23<br>Пн</td>
+            <td>24<br>Вт</td>
+            <td>25<br>Ср</td>
+            <td>26<br>Чт</td>
+            <td>27<br>Пт</td>
+            <td class="warning">28<br>Сб</td>
+            <td class="danger">29<br>Вс</td>
+            <td>30<br>Пн</td>
+            <td>31<br>Вт</td>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Студент 1: Гниляков Ярослав Иванович -->
+        <tr>
+            <td>1</td>
+            <td>Гниляков Я. И.</td>
+            <td class="danger">08:12/12:43<br></td>   <!-- 01 вс -->
+            <td>11:46/12:01<br></td>                <!-- 02 пн -->
+            <td>/<br></td>                           <!-- 03 вт -->
+            <td>10:23/15:31<br></td>                <!-- 04 ср -->
+            <td>08:34/16:41<br></td>                <!-- 05 чт -->
+            <td>08:30/14:26<br></td>                <!-- 06 пт -->
+            <td class="warning">08:57/<br></td>       <!-- 07 сб -->
+            <td class="danger">10:35/15:24<br></td>   <!-- 08 вс -->
+            <td>08:05/14:23<br></td>                <!-- 09 пн -->
+            <td>/<br></td>                           <!-- 10 вт -->
+            <td>11:04/12:03<br></td>                <!-- 11 ср -->
+            <td>/<br></td>                           <!-- 12 чт -->
+            <td>/<br></td>                           <!-- 13 пт -->
+            <td class="warning">11:16/<br></td>       <!-- 14 сб -->
+            <td class="danger">08:11/16:15<br></td>   <!-- 15 вс -->
+            <td>/13:01<br></td>                      <!-- 16 пн -->
+            <td>/15:51<br></td>                      <!-- 17 вт -->
+            <td>08:15/<br></td>                      <!-- 18 ср -->
+            <td>/<br></td>                           <!-- 19 чт -->
+            <td>/<br></td>                           <!-- 20 пт -->
+            <td class="warning">/<br></td>            <!-- 21 сб -->
+            <td class="danger">/<br></td>             <!-- 22 вс -->
+            <td>/<br></td>                           <!-- 23 пн -->
+            <td>11:57/14:15<br></td>                <!-- 24 вт -->
+            <td>/15:44<br></td>                      <!-- 25 ср -->
+            <td>/<br></td>                           <!-- 26 чт -->
+            <td>/<br></td>                           <!-- 27 пт -->
+            <td class="warning">11:32/12:04<br></td>  <!-- 28 сб -->
+            <td class="danger">11:40/12:34<br></td>   <!-- 29 вс -->
+            <td>11:50/14:30<br></td>                <!-- 30 пн -->
+            <td>/<br></td>                           <!-- 31 вт (нет данных) -->
+        </tr>
+        <!-- Студент 2: Гулевич Артём Денисович -->
+        <tr>
+            <td>2</td>
+            <td>Гулевич А. Д.</td>
+            <td class="danger">11:30/17:00<br></td>   <!-- 01 -->
+            <td>10:04/15:41<br></td>                <!-- 02 -->
+            <td>/13:45<br></td>                      <!-- 03 -->
+            <td>11:50/14:03<br></td>                <!-- 04 -->
+            <td>/<br></td>                           <!-- 05 -->
+            <td>09:04/12:21<br></td>                <!-- 06 -->
+            <td class="warning">/<br></td>            <!-- 07 -->
+            <td class="danger">/<br></td>             <!-- 08 -->
+            <td>/<br></td>                           <!-- 09 -->
+            <td>/<br></td>                           <!-- 10 -->
+            <td>/<br></td>                           <!-- 11 -->
+            <td>08:14/16:46<br></td>                <!-- 12 -->
+            <td>/<br></td>                           <!-- 13 -->
+            <td class="warning">/12:17<br></td>       <!-- 14 -->
+            <td class="danger">08:18/12:47<br></td>   <!-- 15 -->
+            <td>10:34/<br></td>                      <!-- 16 -->
+            <td>11:15/12:26<br></td>                <!-- 17 -->
+            <td>08:38/16:41<br></td>                <!-- 18 -->
+            <td>08:31/<br></td>                      <!-- 19 -->
+            <td>11:22/17:02<br></td>                <!-- 20 -->
+            <td class="warning">09:03/17:58<br></td>  <!-- 21 -->
+            <td class="danger">11:08/17:23<br></td>   <!-- 22 -->
+            <td>09:11/<br></td>                      <!-- 23 -->
+            <td>08:59/<br></td>                      <!-- 24 -->
+            <td>/<br></td>                           <!-- 25 -->
+            <td>/<br></td>                           <!-- 26 -->
+            <td>08:19/13:25<br></td>                <!-- 27 -->
+            <td class="warning">/<br></td>            <!-- 28 -->
+            <td class="danger">/<br></td>             <!-- 29 -->
+            <td>10:29/16:46<br></td>                <!-- 30 -->
+            <td>/<br></td>                           <!-- 31 -->
+        </tr>
+        <!-- Студент 3: Иванюсь Евгений Владимирович -->
+        <tr>
+            <td>3</td>
+            <td>Иванюсь Е. В.</td>
+            <td class="danger">/<br></td>             <!-- 01 -->
+            <td>10:23/<br></td>                      <!-- 02 -->
+            <td>11:07/<br></td>                      <!-- 03 -->
+            <td>/<br></td>                           <!-- 04 -->
+            <td>/<br></td>                           <!-- 05 -->
+            <td>10:00/<br></td>                      <!-- 06 -->
+            <td class="warning">10:31/12:59<br></td>  <!-- 07 -->
+            <td class="danger">/13:09<br></td>        <!-- 08 -->
+            <td>/<br></td>                           <!-- 09 -->
+            <td>10:42/16:59<br></td>                <!-- 10 -->
+            <td>08:39/13:32<br></td>                <!-- 11 -->
+            <td>08:45/14:09<br></td>                <!-- 12 -->
+            <td>/<br></td>                           <!-- 13 -->
+            <td class="warning">/<br></td>            <!-- 14 -->
+            <td class="danger">/<br></td>             <!-- 15 -->
+            <td>09:52/17:10<br></td>                <!-- 16 -->
+            <td>09:18/16:07<br></td>                <!-- 17 -->
+            <td>/<br></td>                           <!-- 18 -->
+            <td>09:12/13:52<br></td>                <!-- 19 -->
+            <td>09:40/14:48<br></td>                <!-- 20 -->
+            <td class="warning">09:16/16:17<br></td>  <!-- 21 -->
+            <td class="danger">11:51/13:00<br></td>   <!-- 22 -->
+            <td>/<br></td>                           <!-- 23 -->
+            <td>08:52/14:05<br></td>                <!-- 24 -->
+            <td>11:26/12:34<br></td>                <!-- 25 -->
+            <td>11:37/16:55<br></td>                <!-- 26 -->
+            <td>10:29/15:42<br></td>                <!-- 27 -->
+            <td class="warning">/<br></td>            <!-- 28 -->
+            <td class="danger">08:03/<br></td>        <!-- 29 -->
+            <td>09:34/15:17<br></td>                <!-- 30 -->
+            <td>/<br></td>                           <!-- 31 -->
+        </tr>
+        <!-- Студент 4: Киселёва Виолетта Константиновна -->
+        <tr>
+            <td>4</td>
+            <td>Киселёва В. К.</td>
+            <td class="danger">08:57/16:59<br></td>   <!-- 01 -->
+            <td>/13:09<br></td>                      <!-- 02 -->
+            <td>/<br></td>                           <!-- 03 -->
+            <td>/16:13<br></td>                      <!-- 04 -->
+            <td>/<br></td>                           <!-- 05 -->
+            <td>/<br></td>                           <!-- 06 -->
+            <td class="warning">10:35/<br></td>       <!-- 07 -->
+            <td class="danger">/<br></td>             <!-- 08 -->
+            <td>/<br></td>                           <!-- 09 -->
+            <td>/<br></td>                           <!-- 10 -->
+            <td>/<br></td>                           <!-- 11 -->
+            <td>10:06/17:35<br></td>                <!-- 12 -->
+            <td>11:44/14:25<br></td>                <!-- 13 -->
+            <td class="warning">10:42/17:10<br></td>  <!-- 14 -->
+            <td class="danger">/<br></td>             <!-- 15 -->
+            <td>/<br></td>                           <!-- 16 -->
+            <td>/<br></td>                           <!-- 17 -->
+            <td>/15:20<br></td>                      <!-- 18 -->
+            <td>11:41/12:43<br></td>                <!-- 19 -->
+            <td>10:15/12:26<br></td>                <!-- 20 -->
+            <td class="warning">08:11/12:46<br></td>  <!-- 21 -->
+            <td class="danger">08:53/15:44<br></td>   <!-- 22 -->
+            <td>09:33/16:52<br></td>                <!-- 23 -->
+            <td>/<br></td>                           <!-- 24 -->
+            <td>09:54/14:32<br></td>                <!-- 25 -->
+            <td>11:54/12:53<br></td>                <!-- 26 -->
+            <td>/<br></td>                           <!-- 27 -->
+            <td class="warning">/<br></td>            <!-- 28 -->
+            <td class="danger">11:37/<br></td>        <!-- 29 -->
+            <td>09:06/16:52<br></td>                <!-- 30 -->
+            <td>/<br></td>                           <!-- 31 -->
+        </tr>
+        <!-- Студент 5: Корабельников Марк Евгеньевич -->
+        <tr>
+            <td>5</td>
+            <td>Корабельников М. Е.</td>
+            <td class="danger">/<br></td>             <!-- 01 -->
+            <td>10:49/12:57<br></td>                <!-- 02 -->
+            <td>10:37/13:53<br></td>                <!-- 03 -->
+            <td>/<br></td>                           <!-- 04 -->
+            <td>10:43/12:24<br></td>                <!-- 05 -->
+            <td>/<br></td>                           <!-- 06 -->
+            <td class="warning">11:30/17:37<br></td>  <!-- 07 -->
+            <td class="danger">/<br></td>             <!-- 08 -->
+            <td>10:56/15:35<br></td>                <!-- 09 -->
+            <td>08:52/16:29<br></td>                <!-- 10 -->
+            <td>/<br></td>                           <!-- 11 -->
+            <td>/13:55<br></td>                      <!-- 12 -->
+            <td>/<br></td>                           <!-- 13 -->
+            <td class="warning">/<br></td>            <!-- 14 -->
+            <td class="danger">11:21/17:58<br></td>   <!-- 15 -->
+            <td>/<br></td>                           <!-- 16 -->
+            <td>09:32/15:19<br></td>                <!-- 17 -->
+            <td>/<br></td>                           <!-- 18 -->
+            <td>/<br></td>                           <!-- 19 -->
+            <td>10:01/15:18<br></td>                <!-- 20 -->
+            <td class="warning">/<br></td>            <!-- 21 -->
+            <td class="danger">09:21/16:36<br></td>   <!-- 22 -->
+            <td>/<br></td>                           <!-- 23 -->
+            <td>10:25/<br></td>                      <!-- 24 -->
+            <td>09:50/15:55<br></td>                <!-- 25 -->
+            <td>10:49/<br></td>                      <!-- 26 -->
+            <td>09:17/12:35<br></td>                <!-- 27 -->
+            <td class="warning">08:18/14:21<br></td>  <!-- 28 -->
+            <td class="danger">08:32/16:03<br></td>   <!-- 29 -->
+            <td>/17:21<br></td>                      <!-- 30 -->
+            <td>/<br></td>                           <!-- 31 -->
+        </tr>
+        <!-- Студент 6: Парамонова Дарья Сергеевна -->
+        <tr>
+            <td>6</td>
+            <td>Парамонова Д. С.</td>
+            <td class="danger">/<br></td>             <!-- 01 -->
+            <td>08:23/13:11<br></td>                <!-- 02 -->
+            <td>/<br></td>                           <!-- 03 -->
+            <td>09:33/17:29<br></td>                <!-- 04 -->
+            <td>/17:02<br></td>                      <!-- 05 -->
+            <td>/<br></td>                           <!-- 06 -->
+            <td class="warning">/13:10<br></td>       <!-- 07 -->
+            <td class="danger">/<br></td>             <!-- 08 -->
+            <td>08:30/17:31<br></td>                <!-- 09 -->
+            <td>08:23/12:38<br></td>                <!-- 10 -->
+            <td>/<br></td>                           <!-- 11 -->
+            <td>/<br></td>                           <!-- 12 -->
+            <td>/<br></td>                           <!-- 13 -->
+            <td class="warning">/<br></td>            <!-- 14 -->
+            <td class="danger">11:26/13:10<br></td>   <!-- 15 -->
+            <td>10:57/16:07<br></td>                <!-- 16 -->
+            <td>09:04/16:01<br></td>                <!-- 17 -->
+            <td>/15:26<br></td>                      <!-- 18 -->
+            <td>10:30/15:01<br></td>                <!-- 19 -->
+            <td>/<br></td>                           <!-- 20 -->
+            <td class="warning">11:01/12:55<br></td>  <!-- 21 -->
+            <td class="danger">/<br></td>             <!-- 22 -->
+            <td>/16:30<br></td>                      <!-- 23 -->
+            <td>/<br></td>                           <!-- 24 -->
+            <td>/<br></td>                           <!-- 25 -->
+            <td>11:57/16:25<br></td>                <!-- 26 -->
+            <td>10:15/13:44<br></td>                <!-- 27 -->
+            <td class="warning">10:05/13:20<br></td>  <!-- 28 -->
+            <td class="danger">09:14/16:52<br></td>   <!-- 29 -->
+            <td>/<br></td>                           <!-- 30 -->
+            <td>/<br></td>                           <!-- 31 -->
+        </tr>
+        <!-- Студент 7: Яликов Максим Александрович -->
+        <tr>
+            <td>7</td>
+            <td>Яликов М. А.</td>
+            <td class="danger">/<br></td>             <!-- 01 -->
+            <td>10:54/17:37<br></td>                <!-- 02 -->
+            <td>09:26/15:32<br></td>                <!-- 03 -->
+            <td>/<br></td>                           <!-- 04 -->
+            <td>/<br></td>                           <!-- 05 -->
+            <td>/14:52<br></td>                      <!-- 06 -->
+            <td class="warning">08:15/16:17<br></td>  <!-- 07 -->
+            <td class="danger">09:06/17:41<br></td>   <!-- 08 -->
+            <td>/<br></td>                           <!-- 09 -->
+            <td>10:35/14:09<br></td>                <!-- 10 -->
+            <td>/<br></td>                           <!-- 11 -->
+            <td>08:04/12:25<br></td>                <!-- 12 -->
+            <td>09:32/12:42<br></td>                <!-- 13 -->
+            <td class="warning">09:22/14:27<br></td>  <!-- 14 -->
+            <td class="danger">11:32/16:51<br></td>   <!-- 15 -->
+            <td>09:43/15:09<br></td>                <!-- 16 -->
+            <td>/<br></td>                           <!-- 17 -->
+            <td>/16:06<br></td>                      <!-- 18 -->
+            <td>10:43/14:49<br></td>                <!-- 19 -->
+            <td>11:38/14:32<br></td>                <!-- 20 -->
+            <td class="warning">/<br></td>            <!-- 21 -->
+            <td class="danger">08:25/17:07<br></td>   <!-- 22 -->
+            <td>10:05/13:32<br></td>                <!-- 23 -->
+            <td>09:49/13:32<br></td>                <!-- 24 -->
+            <td>10:33/14:27<br></td>                <!-- 25 -->
+            <td>/<br></td>                           <!-- 26 -->
+            <td>08:09/13:17<br></td>                <!-- 27 -->
+            <td class="warning">/<br></td>            <!-- 28 -->
+            <td class="danger">/13:22<br></td>        <!-- 29 -->
+            <td>/<br></td>                           <!-- 30 -->
+            <td>/<br></td>                           <!-- 31 -->
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+<footer class="container-fluid footer no-print">
+Все права защищены &copy; 2016-2026 <a href="https://smtumail.smtu.ru/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fsmtumail.smtu.ru%2fowa%2f">Почта</a><br>
+
+<a href="/privacy_policy/">Политика конфиденциальности</a>, <a href="/terms_of_use/">Пользовательское соглашение</a>
+
+<a href="#" class="pull-right scrollToTop"><i class="fa fa-chevron-up"></i></a>
+
+</footer>
+</section><!-- Content Block Ends Here (right box)-->
+<!-- JQuery v1.9.1 -->
+<script src="/assets/js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+
+<script src="/assets/js/plugins/underscore2/underscore-min.js"></script>
+
+<!-- Bootstrap -->
+<script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Globalize -->
+<script src="/assets/js/globalize/globalize.min.js"></script>
+
+<!-- NanoScroll -->
+<script src="/assets/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+
+<!-- Angular JS -->
+<script src="/assets/js/angular/angular.min.js"></script>
+
+<!-- ToDo List Plugin -->
+<script src="/assets/js/angular/todo.js"></script>
+
+<!-- Calendar JS -->
+<!-- Custom JQuery -->
+<script src="/assets/js/app/custom.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="/assets/js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<script type="text/javascript" src="/assets/js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+$(document).ready(function() {
+$(".add_mess").fancybox({
+'width' : '1200px',
+'height' : 'auto',
+'autoScale' : true,
+'transitionIn' : 'none',
+'transitionOut' : 'none',
+'type' : 'iframe' });
+$(".pdf_up").fancybox({
+'width' : '1200px',
+'height' : 'auto',
+'autoScale' : true,
+'transitionIn' : 'none',
+'transitionOut' : 'none',
+'type' : 'iframe' });
+$(".add_mess_ref").fancybox({
+'width' : '1200px',
+'height' : 'auto',
+'autoScale' : true,
+'transitionIn' : 'none',
+'transitionOut' : 'none',
+'type' : 'iframe',
+'afterClose' : up_com_rel
+});
+
+});
+function up_com_rel() {
+location.reload();
+};
+</script>
+<script src="/assets/js/moment/moment.js"></script>
+
+<script src="/assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+
+<script type="text/javascript">
+$(function () {
+$('.date_ymd').datetimepicker({
+format:"YYYY/MM/DD",
+locale: 'ru',
+sideBySide: true
+});
+$('.date_dmy').datetimepicker({
+format:"DD/MM/YYYY",
+locale: 'ru',
+sideBySide: true
+});
+$('.input_datetime').datetimepicker({
+format:"YYYY/MM/DD HH:mm",
+locale: 'ru',
+sideBySide: true
+});
+$('.input_datetime_dmy').datetimepicker({
+format:"DD/MM/YYYY HH:mm",
+locale: 'ru',
+sideBySide: true
+});
+$('.date_hi').datetimepicker({
+format:"HH:mm",
+locale: 'ru',
+sideBySide: true
+});
+
+$('.date_y').datetimepicker({
+format:"YYYY",
+locale: 'ru',
+sideBySide: true
+});
+});
+</script>
+<script>
+function del_user_noti(user_noti_id) {
+$.post('/assets/ajax/ajax_conn.php', {
+module: 'user_noti',
+func: 'del_noti',
+user_noti_id: user_noti_id
+});
+$(".user_noti_"+user_noti_id).remove();
+$("#not_user_noti").text((parseInt($("#not_user_noti").text())-1));
+
+}
+function del_mark_income(hex) {
+$.post('/assets/ajax/ajax_conn.php', {
+module: 'ajax_open_func',
+func: 'mark_income',
+hex: hex
+});
+$(".noti_income_"+hex).remove();
+$("#noti_income").text((parseInt($("#noti_income").text())-1));
+
+}
+
+</script>
+<script>
+function showhide (cl) {
+$("#"+cl).toggle();
+}
+</script>
+</body>
+</html><!--
+Array
+(
+[0] => 0.0284
+[1] => 0.0284
+[2] => 0.0285
+[3] => 0.0349
+[4] => 0.0363
+[5] => 0.0387
+[6] => 0.0399
+[7] => 0.0433
+[8] => 0.0441
+[9] => 0.0471
+[10] => 0.0493
+[10.1] => 0.0715
+[11] => 0.0732
+[12] => 0.074
+[13] => 0.074
+[14] => 0.076
+[15] => 0.0806
+[16] => 0.083
+[17] => 0.0831
+[18] => 0.085
+[19] => 0.085
+[20] => 0.0851
+[21] => 0.0851
+[22] => 0.089
+[23] => 0.089
+[24] => 0.0902
+[25] => 0.0918
+[26] => 0.0968
+[27] => 0.0968
+[28] => 0.0976
+[ar_0] => 0.0976
+[29] => 0.1008
+[30] => 0.1009
+[31] => 0.1009
+[32] => 0.101
+[33] => 0.101
+[52] => 0.594
+[53] => 0.6158
+[54] => 0.6159
+[55] => 0.616
+[77] => 0.616
+)
+-->
+
+

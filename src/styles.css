@@ -1,0 +1,408 @@
+html,
+:root {
+  color: #0f172a;
+  background: #c2defa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: #c2defa;
+  border: 0;
+  border-radius: 0;
+  max-width: none;
+  max-height: none;
+  overflow: auto;
+}
+
+.header-modal {
+    display: flex;
+    justify-content: end;
+    padding: 10px 15px;
+    position: relative;
+}
+.header-app {
+    background-color: white;
+    stroke: inside 5px #063487;
+    border-radius: 0 0 25px 25px;
+    min-height: 135px;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    z-index: 10;
+    border-bottom: 2px solid #063487;
+}
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #315db7;
+}
+
+#app {
+  min-height: 100vh;
+  background: #c2defa;
+}
+
+.app-message {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 1200;
+  width: min(560px, calc(100% - 32px));
+  transform: translateX(-50%);
+  border: 1px solid #063487;
+  border-radius: 12px;
+  background: #fff;
+  color: #063487;
+  padding: 12px 16px;
+  box-shadow: 0 8px 24px rgba(6, 52, 135, 0.2);
+  text-align: center;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.app-header {
+  min-height: 118px;
+}
+
+.app-header.compact {
+  min-height: 92px;
+}
+
+.logo-button {
+  width: 104px;
+  height: 104px;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.logo-button:hover {
+  transform: translateY(-2px);
+}
+.date-week-today {
+    background-color: whitesmoke;
+    flex: 1;
+    padding: 15px 10px;
+    align-self: flex-start;
+    width: 100%;
+}
+.main-actions {
+  padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn,
+.btnbox,
+.btn-file,
+.btn-head,
+.btn-group,
+.close-button {
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-title {
+  line-height: 1.1;
+}
+
+.btn-hits {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: rgba(6, 52, 135, 0.24);
+  backdrop-filter: blur(3px);
+  overflow: auto;
+}
+
+.dialog-card {
+  width: min(760px, 100%);
+  max-width: 760px;
+  background: #fff;
+  border: 2px solid #063487;
+  border-radius: 40px;
+}
+
+.dialog-card.infoWind {
+  max-width: 700px;
+}
+
+.dialog-card header {
+  min-height: 54px;
+  border: 0;
+  background: #fff;
+  border-radius: 40px 40px 0 0;
+  justify-content: flex-end;
+}
+
+.dialog-card main,
+.dialog-card form,
+.dialog-content {
+  width: 100%;
+}
+
+.dialog-card h1 {
+  margin-bottom: 8px;
+}
+
+.wait-state {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.summary-row {
+  align-items: stretch;
+}
+
+.summary-row .wrapper {
+  flex: 1;
+  min-width: 220px;
+}
+
+.wrapper-modal {
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+.table-head-row {
+  align-items: center;
+}
+
+.timeinout,
+.studdisp,
+.disp {
+  width: 100%;
+  /* min-width: 720px; */
+}
+
+.timeinout{
+  border-collapse: collapse;
+}
+
+/* ===== Контейнер прокрутки ===== */
+.table-scroll {
+  overflow-x: auto;
+  overflow-y: auto; /* важно для вертикальной прокрутки */
+  width: 100%;
+  max-height: 70vh; /* ограничиваем высоту, чтобы появилась прокрутка */
+  padding: 1px 0;
+  border: none;
+}
+
+/* ===== Базовая таблица ===== */
+.table-fixed-cols {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  margin: 0;
+}
+
+/* ===== Ячейки: внутренние границы ===== */
+.table-fixed-cols th,
+.table-fixed-cols td {
+  padding: 10px 12px;
+  background-color: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+}
+
+.table-fixed-cols th:last-child,
+.table-fixed-cols td:last-child {
+  border-right: none;
+}
+
+.table-fixed-cols tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== ШАПКА: фиксация по вертикали ===== */
+.table-fixed-cols thead th {
+  background-color: #ffffff;
+  font-weight: 600;
+  
+  /* Фиксация сверху */
+  position: sticky;
+  top: 0;
+  z-index: 10; /* выше, чем у обычных ячеек */
+  
+  border-bottom: 2px solid #063487;
+  border-right: 1px solid #ccc;
+  border-top: none;
+}
+
+.table-fixed-cols thead th:last-child {
+  border-right: none;
+}
+
+/* ===== Столбец №1: фиксация слева + сверху ===== */
+.table-fixed-cols th:nth-child(1),
+.table-fixed-cols td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  background-color: #ffffff;
+  min-width: 3em;
+  width: 3em;
+  text-align: center;
+  
+  border-right: 2px solid #063487;
+  border-bottom: 2px solid #063487;
+}
+
+/* Угловая ячейка: и сверху, и слева — максимальный z-index */
+.table-fixed-cols thead th:nth-child(1) {
+  z-index: 20; /* самый высокий: перекрывает и шапку, и первый столбец */
+  background-color: #ffffff; /* чуть темнее для визуального акцента */
+  border-top: none;
+  border-left: none;
+}
+
+/* ===== Столбец №2 (ФИО): фиксация слева + сверху ===== */
+.table-fixed-cols th:nth-child(2),
+.table-fixed-cols td:nth-child(2) {
+  position: sticky;
+  left: 3em; /* ширина первого столбца */
+  z-index: 4;
+  background-color: #ffffff;
+  min-width: 180px;
+  
+  border-right: 3px solid #063487;
+  border-bottom: 2px solid #063487;
+}
+
+/* Заголовок второго столбца: фиксация по двум осям */
+.table-fixed-cols thead th:nth-child(2) {
+  z-index: 15; /* выше обычной шапки, но ниже угловой */
+  background-color: #ffffff;
+}
+
+/* ===== Последний столбец "Подробнее" ===== */
+.table-fixed-cols th:last-child,
+.table-fixed-cols td:last-child {
+  border-left: 2px solid #063487;
+  border-right: none;
+  text-align: center;
+  min-width: 100px;
+}
+
+/* Заголовок последнего столбца: тоже фиксируем сверху */
+.table-fixed-cols thead th:last-child {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+/* Если есть "Подробнее" — жирная линия и у заголовка */
+.table-fixed-cols.has-details thead th:last-child {
+  border-left: 2px solid #063487;
+}
+
+/* ===== Сброс границ у угловых ячеек ===== */
+.table-fixed-cols thead th:first-child {
+  border-top: none;
+  border-left: none;
+}
+.table-fixed-cols tbody tr:last-child td:first-child {
+  border-bottom: none;
+  border-left: none;
+}
+.table-fixed-cols tbody tr:last-child td:last-child {
+  border-bottom: none;
+}
+
+/* ===== Ховер-эффекты ===== */
+.table-fixed-cols tbody tr:hover td {
+  background-color: #f9fbfd;
+}
+.table-fixed-cols tbody tr:hover td:nth-child(1),
+.table-fixed-cols tbody tr:hover td:nth-child(2) {
+  background-color: #e6eef7;
+}
+
+.timeinout td:first-child,
+.timeinout td:nth-child(2),
+.timeinout th:first-child,
+.timeinout th:nth-child(2) {
+    border-right: 2px solid;
+    padding: 10px;
+    position: sticky;
+}
+
+@media (max-width: 820px) {
+  header,
+  .app-header {
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  .info,
+  .top-row,
+  .main-actions {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .main-actions .btn:last-child {
+    grid-column: auto;
+  }
+
+  main {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .btn-title {
+    font-size: 34px;
+  }
+}

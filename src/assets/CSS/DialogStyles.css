@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../Fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+body {
+    background-color: white;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #063487;
+    border-radius: 40px;
+    max-width: 1200px;
+    max-height: 480px;
+}
+header {
+    display: flex;
+    justify-content: end;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.wrapper-modal {
+    padding: 20px 80px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+main {
+    padding: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    align-self: center;
+}
+
+.textbox {
+    background-color: #c2defa;
+    border: none;
+    border-radius: 15px;
+    font-size: 28px;
+    padding: 10px;
+    width: 100%;
+}
+
+form {
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+}
+.filebox {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.labelbox {
+    background-color: #c2defa;
+    border: none;
+    border-radius: 15px;
+    font-size: 28px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    opacity: 0.5;
+}
+
+.waitbox {
+    border: none;
+    border-radius: 20px;
+    font-size: 28px;
+    height: 65px;
+    width: 100%;
+    background-image: linear-gradient(to right, #c2defa, white 50%, white);
+}
+
+p {
+    align-self: baseline;
+    opacity: 0.5;
+    font-size: 28px;
+}
+
+.open-text {
+    font-size: 28px;
+    color: white;
+}
+
+.infoWind {
+    max-width: 700px;
+}

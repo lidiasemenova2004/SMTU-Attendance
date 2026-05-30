@@ -1,0 +1,28 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "fs:default",
+    {
+      "identifier": "fs:allow-read-text-file",
+      "allow": [{ "path": "$RESOURCE/sd/**" }]
+    },
+    "fs:allow-write-text-file",
+    "http:default",
+    {
+      "identifier": "http:default",
+      "allow": [
+    { "url": "https://isu.smtu.ru/**" },
+    { "url": "https://www.smtu.ru/**" }
+      ]
+    },
+    "dialog:default",
+    "dialog:allow-ask",
+    "dialog:allow-message"
+  ]
+}

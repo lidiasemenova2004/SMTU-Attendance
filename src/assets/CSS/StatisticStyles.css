@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../Fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+body {
+    background-color: #c2defa;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+header {
+    background-color: white;
+    stroke: inside 5px #063487;
+    border-radius: 0 0 25px 25px;
+    min-height: 135px;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    z-index: 10;
+    border-bottom: 2px solid #063487;
+}
+.date-week-today {
+    background-color: whitesmoke;
+    flex: 1;
+    padding: 15px 10px;
+    flex-basis: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    flex-shrink: 0;
+}
+.logo img {
+    object-fit: contain;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #063487;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.out-logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 20px 10px;
+    justify-content: space-around;
+}
+.rowhead {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.groupinfo {
+    font-size: 16px;
+}
+
+h2 {
+    font-weight: inherit;
+    font-size: 26px;
+}
+
+.procent {
+    font-size: 26px;
+    font-style: italic;
+}
+
+.notes {
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.timeinout {
+    border: 1px hidden;
+    border-collapse: separate;
+}
+.timeinout td,
+.timeinout th {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.timeinout th {
+    border-bottom: 2px solid;
+    padding: 10px;
+}
+.sticky {
+  position: sticky;
+  background: #fff; 
+  z-index: 2;
+}
+.timeinout td:first-child,
+.timeinout td:nth-child(2),
+.timeinout th:first-child,
+.timeinout th:nth-child(2) {
+    border-right: 2px solid;
+    padding: 10px;
+}
+.timeinout td:last-child,
+.timeinout th:last-child {
+    border-left: 2px solid;
+    padding: 10px;
+}
+
+.wrapper-title {
+    text-align: center;
+    font-size: 28px;
+}
+
+a {
+    color: #7d9eff;
+}
+a:hover {
+    color: #1a3875;
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.23);
+    text-shadow: 0 0 5px #1a3875;
+}
+
+.studdisp {
+    border: 1px hidden;
+    border-collapse: collapse;
+}
+.studdisp td,
+.studdisp th {
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.studdisp th {
+    border-bottom: 2px solid;
+    padding: 10px;
+}
+
+.disp {
+    border: 1px hidden;
+    border-collapse: collapse;
+}
+.disp td,
+.disp th {
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.disp th {
+    border-bottom: 2px solid;
+    padding: 10px;
+}
