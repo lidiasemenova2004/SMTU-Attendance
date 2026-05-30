@@ -1,69 +1,50 @@
-name: "publish"
-
+name: Сборка Tauri
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'v*' # Запускает сборку при создании тега (например, v1.0.0)
 
 jobs:
-  publish-tauri:
-    permissions:
-      contents: write
+  build-tauri:
     strategy:
       fail-fast: false
       matrix:
         include:
-          - platform: "macos-14"
-            args: "--target aarch64-apple-darwin"
-          - platform: "macos-13"
-            args: "--target x86_64-apple-darwin"
-          - platform: "ubuntu-22.04"
-            args: ""
-          - platform: "windows-latest"
-            args: ""
+          - platform: 'macos-latest' # Сборка для macOS
+            args: '--target universal-apple-darwin'
+          - platform: 'ubuntu-22.04' # Сборка для Linux
+            args: ''
+          - platform: 'windows-latest' # Сборка для Windows
+            args: ''
 
     runs-on: ${{ matrix.platform }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: install dependencies (ubuntu only)
+      - name: Установка Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm' # или yarn / pnpm
+
+      - name: Установка Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Установка зависимостей (Linux)
         if: matrix.platform == 'ubuntu-22.04'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
 
-      - name: setup deno
-        uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+      - name: Установка зависимостей проекта
+        run: npm install # или yarn install / pnpm install
 
-      - name: setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: install npm dependencies
-        run: npm ci   # или npm install, если нет package-lock.json
-
-      # Сборка фронтенда через deno (если нужно)
-      - name: build frontend (deno)
-        run: deno task build   # создаст dist/
-
-      - name: install Rust stable
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.platform == 'macos-14' && 'aarch64-apple-darwin' || matrix.platform == 'macos-13' && 'x86_64-apple-darwin' || '' }}
-
-      - name: Rust cache
-        uses: swatinem/rust-cache@v2
-        with:
-          workspaces: "src-tauri"
-
-      - uses: tauri-apps/tauri-action@v2   # или v1, если Tauri 1
+      - name: Сборка приложения
+        uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: app-v__VERSION__
-          releaseName: "App v__VERSION__"
-          releaseBody: "See the assets to download this version and install."
-          releaseDraft: true
-          prerelease: false
+          tagName: ${{ github.ref_name }}
+          releaseName: 'Релиз ${{ github.ref_name }}'
           args: ${{ matrix.args }}
